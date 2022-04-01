@@ -1,0 +1,80 @@
+:root{
+    --dim-dark: rgb(51, 51, 51);
+    --orange: rgb(250, 140, 89);
+    --tomato: rgb(252, 88, 77);
+    --light-yellow: rgb(255, 202, 88);
+    --yellow: rgb(255, 224, 88);
+}
+body{
+    display: grid;
+    place-content: center;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: rgb(255, 247, 248);
+    color: white;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
+h2{
+    font-size: 1.2rem;
+}
+p{
+    color: var(--purple);
+    font-size: .8rem;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    font-size: .8rem;
+}
+/*utilities*/
+.wrapper{
+    max-width: 800px;
+}
+@media only screen and (max-width: 800px) {
+    .wrapper{
+        padding: 1rem;
+    }
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.main > *{
+    padding: 2rem;
+}
+.grid__black{
+    grid-column: 2/-1;
+    background-color: var(--dim-dark);
+}
+.orange{
+    background-color: var(--orange);
+}
+.tomato{
+    background-color: var(--tomato);
+}
+.light-yellow{
+    background-color: var(--light-yellow);
+}
+.yellow{
+    background-color: var(--yellow);
+}
+button{
+    padding: .5rem 1rem;
+    background-color: white;
+    border: none;
+    display: inline-block;
+    margin-top: .5rem;
+}
